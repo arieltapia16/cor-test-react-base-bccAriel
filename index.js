@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
 import Hello from './Hello';
+import FindWord from './FindWord/findWord';
+
 import './style.css';
 
 class App extends Component {
@@ -24,6 +26,7 @@ class App extends Component {
         <p><b>NOTA:</b> Las matrices se encuentra en un archivo json localizado en: '/resources.json'. El service va a recuperar información de este archivo simulando una petición a una API.</p>
         <h4>Salida:</h4>
         <p>Para cada sopa de letras seleccionada, hay que escribir cuantas veces aparece "OIE" dentro de ella. Para esto es preferible obtener la respuesta en otro <i>componente</i> (se creativ@).</p>
+        <FindWord/>
       </div>
     );
   }
