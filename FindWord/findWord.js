@@ -22,7 +22,7 @@ const FindWord = () => {
               }
             }
             // bottom
-            if(matrix[x+1]) {
+            if(matrix[x+2]) {
               // right bottom
               if (matrix[x+1][y + 1] === 'I') {
                 if (matrix[x+2][y + 2] === 'E') {
@@ -37,7 +37,7 @@ const FindWord = () => {
               }
             }
             // left
-            if (matrix[x][y - 1]) {
+            if (matrix[x][y - 2]) {
               // left bottom
               if (matrix[x + 1] && matrix[x - 1][y - 1] === 'I') {
                 if (matrix[x + 1][y - 2] && matrix[x - 1][y - 2] === 'E') {
@@ -46,7 +46,7 @@ const FindWord = () => {
               }
               // left left
               if (matrix[x][y - 1] === 'I') {
-                if (matrix[x][ y - 2] && matrix[x][y - 2] === 'E') {
+                if (matrix[x][y - 2] === 'E') {
                   count++
                 }
               }
